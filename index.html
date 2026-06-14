@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumman Dev Portfolio | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+
+<!-- Cursor Custom -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Particle Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-logo">RS DEV <span>STUDIO.</span></div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+</div>
+
+<!-- ========================= NAVBAR ========================= -->
+<header class="header" id="header">
+    <a href="#" class="logo">Rumman<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-right">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="https://wa.me/923110476828" class="hire-btn">
+            <span>Hire Me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- ========================= HERO ========================= -->
+<section id="home" class="hero">
+
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-bg-glow glow-3"></div>
+
+    <div class="hero-content">
+
+        <div class="availability" data-aos="fade-up" data-aos-delay="100">
+            <span class="pulse-dot"></span>
+            Available For Freelance
+        </div>
+
+        <h1 data-aos="fade-up" data-aos-delay="200">
+            Hi, I'm <br>
+            <span class="gradient-text typed-text"></span>
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="300">
+            I craft modern, responsive, and high-converting websites
+            that help businesses dominate online.
+        </p>
+
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+            <a href="#projects" class="btn-primary">
+                <span>View My Work</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="https://wa.me/923110476828" class="btn-secondary">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Let's Talk</span>
+            </a>
+        </div>
+
+        <div class="social-icons" data-aos="fade-up" data-aos-delay="500">
+            <a href="#" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rumman-shahzad-846935404/?skipRedirect=true" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/rumman-web-dev" class="social-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+            <div class="stat">
+                <strong class="count" data-target="20">0</strong><strong>+</strong>
+                <span>Projects Done</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong class="count" data-target="15">0</strong><strong>+</strong>
+                <span>Happy Clients</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong class="count" data-target="2">0</strong><strong>+</strong>
+                <span>Years Exp.</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+        <div class="hero-img-wrapper">
+            <div class="hero-img-ring ring-1"></div>
+            <div class="hero-img-ring ring-2"></div>
+            <div class="hero-img-ring ring-3"></div>
+            <img src="hero.png" alt="Rumman Shahzad - Web Developer">
+        </div>
+    </div>
+
+</section>
+
+<!-- ========================= SERVICES ========================= -->
+<section id="services" class="services reveal">
+
+    <div class="section-title">
+        <span class="eyebrow">WHAT I DO</span>
+        <h2>My <span class="gradient-text">Services</span></h2>
+        <p>Delivering professional web solutions tailored for your business growth</p>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card glass-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="service-icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>High-converting landing pages engineered to maximize leads, sales, and customer engagement.</p>
+            <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="service-card glass-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="service-icon">
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3>Business Websites</h3>
+            <p>Professional websites that build trust, represent your brand, and drive measurable growth.</p>
+            <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="service-card glass-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="service-icon">
+                <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <h3>WordPress Dev</h3>
+            <p>Modern WordPress websites with powerful management tools and blazing-fast performance.</p>
+            <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="service-card glass-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="service-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h3>UI / UX Design</h3>
+            <p>Clean, user-centered interfaces that create delightful digital experiences and boost retention.</p>
+            <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+<section id="about" class="about reveal">
+
+    <div class="about-image" data-aos="fade-right">
+        <div class="about-img-frame">
+            <img src="about.png" alt="About Rumman">
+            <div class="about-img-accent"></div>
+        </div>
+        <div class="about-badge">
+            <i class="fa-solid fa-code"></i>
+            <div>
+                <strong>2+ Years</strong>
+                <span>Experience</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-content" data-aos="fade-left">
+        <span class="eyebrow">WHO I AM</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+
+        <p>I'm a passionate Web Developer who crafts modern, responsive, and visually stunning websites that leave a lasting impression.</p>
+        <p>My focus is on writing clean, efficient code and creating user experiences that not only look great but actually convert visitors into customers.</p>
+
+        <div class="about-info">
+            <div class="info-item">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                    <strong>Name</strong>
+                    <span>Rumman Shahzad</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <span>rummanshahzad012@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Location</strong>
+                    <span>Pakistan</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div>
+                    <strong>Status</strong>
+                    <span class="status-open">Open to work</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="cv.pdf" class="btn-primary" download>
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ========================= SKILLS ========================= -->
+<section id="skills" class="skills reveal">
+
+    <div class="section-title">
+        <span class="eyebrow">WHAT I KNOW</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Technologies and tools I work with to build exceptional websites</p>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skills-bars">
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <div class="skill-label">
+                        <i class="fa-brands fa-html5" style="color:#e34f26"></i>
+                        <span>HTML</span>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" data-width="90"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <div class="skill-label">
+                        <i class="fa-brands fa-css3-alt" style="color:#264de4"></i>
+                        <span>CSS</span>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" data-width="85"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <div class="skill-label">
+                        <i class="fa-brands fa-js" style="color:#f7df1e"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" data-width="75"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <div class="skill-label">
+                        <i class="fa-brands fa-wordpress" style="color:#21759b"></i>
+                        <span>WordPress</span>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" data-width="80"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-card glass-card" data-tilt>
+                <i class="fa-brands fa-html5"></i>
+                <h4>HTML5</h4>
+                <span>Expert</span>
+            </div>
+            <div class="tech-card glass-card" data-tilt>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS3</h4>
+                <span>Advanced</span>
+            </div>
+            <div class="tech-card glass-card" data-tilt>
+                <i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+                <span>Intermediate</span>
+            </div>
+            <div class="tech-card glass-card" data-tilt>
+                <i class="fa-brands fa-wordpress"></i>
+                <h4>WordPress</h4>
+                <span>Advanced</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= PROJECTS ========================= -->
+<section id="projects" class="projects reveal">
+
+    <div class="section-title">
+        <span class="eyebrow">MY WORK</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>Real-world projects crafted with passion and precision</p>
+    </div>
+
+    <div class="projects-container">
+
+        <div class="project-card glass-card" data-tilt>
+            <div class="project-img-wrapper">
+                <img src="dentist.jpg" alt="Dentist Website">
+                <div class="project-overlay">
+                    <a href="#" class="btn-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">Healthcare</span>
+                <h3>Dentist Website</h3>
+                <p>Modern dental clinic website with online booking and patient portal.</p>
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+            <div class="project-img-wrapper">
+                <img src="landing.jpg" alt="Landing Page">
+                <div class="project-overlay">
+                    <a href="landing-page/landing-page.html" class="btn-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">Marketing</span>
+                <h3>Landing Page</h3>
+                <p>High-converting marketing landing page with A/B tested conversion elements.</p>
+                <a href="landing-page/landing-page.html" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+            <div class="project-img-wrapper">
+                <img src="gym.jpg" alt="Gym Website">
+                <div class="project-overlay">
+                    <a href="#" class="btn-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">Fitness</span>
+                <h3>Gym Website</h3>
+                <p>Fitness website with membership plans, class schedules, and trainer profiles.</p>
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+            <div class="project-img-wrapper">
+                <img src="restaurant.jpg" alt="Restaurant Website">
+                <div class="project-overlay">
+                    <a href="#" class="btn-overlay">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">Food & Dining</span>
+                <h3>Restaurant Website</h3>
+                <p>Food ordering and restaurant showcase with menu management system.</p>
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section id="contact" class="contact reveal">
+
+    <div class="section-title">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Contact <span class="gradient-text">Me</span></h2>
+        <p>Have a project in mind? Let's build something great together.</p>
+    </div>
+
+    <div class="contact-wrapper">
+
+        <div class="contact-left">
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <strong>Email</strong>
+                    <span>rummanshahzad012@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <strong>WhatsApp</strong>
+                    <span>+92 311 047 6828</span>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <strong>Location</strong>
+                    <span>Pakistan</span>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <strong>Availability</strong>
+                    <span class="status-open">Open for freelance</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Email</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Project Discussion" required>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="6" placeholder="Tell me about your project..." required></textarea>
+            </div><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDZPCFZTptdbzGxmxkNdwTwsxMRVDhKLhVPbwfVppXjtgKvSWGxsgvQQxQqvmJJSxXkmKsr" class="btn-primary">
+            <button type="submit"  ></button>
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button></a>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="#" class="logo">Rumman<span>.</span></a>
+            <p>Building modern websites that help businesses grow and succeed online.</p>
+            <div class="footer-icons">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/rumman-shahzad-846935404/?skipRedirect=true" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/rumman-web-dev" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+            <h4>Services</h4>
+            <a href="#">Landing Pages</a>
+            <a href="#">Business Websites</a>
+            <a href="#">WordPress Dev</a>
+            <a href="#">UI/UX Design</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Rumman Shahzad. All Rights Reserved.</p>
+        <p>Crafted with <i class="fa-solid fa-heart" style="color:#ef4444"></i> in Pakistan</p>
+    </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
