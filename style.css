@@ -1196,4 +1196,17 @@ body.light-mode body::before { display: none; }
         height:38px;
     }
 
+
+}
+@media (max-width:768px){
+
+    body{
+        cursor:auto;
+    }
+
+    .cursor-dot,
+    .cursor-outline{
+        display:none;
+    }
+
 }
