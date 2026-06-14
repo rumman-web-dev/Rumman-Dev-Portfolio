@@ -1222,3 +1222,24 @@ body.light-mode body::before { display: none; }
     }
 
 }
+@media (max-width:650px){
+
+    .loader{
+        padding:0 20px;
+    }
+
+    .loader-inner{
+        width:100%;
+    }
+
+    .loader-logo{
+        font-size:32px;
+    }
+
+    .loader-bar{
+        width:100%;
+        max-width:300px;
+        margin:20px auto;
+    }
+
+}
