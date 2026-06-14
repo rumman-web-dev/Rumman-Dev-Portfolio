@@ -131,8 +131,8 @@ body:has(button:hover) .cursor-outline {
 }
 .loader-logo {
     font-family: 'Syne', sans-serif;
-    font-size: 64px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 700;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -141,7 +141,7 @@ body:has(button:hover) .cursor-outline {
 }
 .loader-logo span { color: var(--primary-light); }
 .loader-bar {
-    width: 800px;
+    width: 700px;
     height: 3px;
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
