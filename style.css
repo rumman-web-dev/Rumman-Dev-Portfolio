@@ -146,7 +146,7 @@ body:has(button:hover) .cursor-outline {
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .loader-progress {
     height: 100%;
