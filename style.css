@@ -1189,7 +1189,7 @@ body.light-mode body::before { display: none; }
     }
 
     #theme-toggle{
-        width:30px;
+        width:38px;
         height:38px;
     }
 
