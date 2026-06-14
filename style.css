@@ -1210,3 +1210,15 @@ body.light-mode body::before { display: none; }
     }
 
 }
+@media (max-width:650px){
+
+    .hero{
+        overflow:hidden;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+        line-height:1.15;
+    }
+
+}
