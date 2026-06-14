@@ -28,7 +28,9 @@
     --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth;
+     margin-bottom: 0;
+}
 
 body {
     padding-left: 0px;
