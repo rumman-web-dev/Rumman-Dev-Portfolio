@@ -1255,3 +1255,34 @@ body.light-mode body::before { display: none; }
     }
 
 }
+@media (max-width:650px){
+
+    .header{
+        padding:0 15px;
+        justify-content:space-between;
+    }
+
+    .logo{
+        font-size:20px;
+        max-width:70%;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    .header-right{
+        gap:8px;
+        flex-shrink:0;
+    }
+
+    #theme-toggle{
+        width:36px;
+        height:36px;
+        min-width:36px;
+    }
+
+    .menu-btn{
+        margin-left:0;
+    }
+
+}
