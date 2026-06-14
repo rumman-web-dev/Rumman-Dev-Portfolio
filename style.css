@@ -1237,9 +1237,21 @@ body.light-mode body::before { display: none; }
     }
 
     .loader-bar{
-        width:70%;
+        width:50%;
+       
         max-width:300px;
         margin:20px auto;
+    }
+
+
+}
+
+@media (max-width:650px){
+
+    .loader-logo{
+        font-size:32px;
+        word-break:break-word;
+        overflow-wrap:break-word;
     }
 
 }
