@@ -131,7 +131,7 @@ body:has(button:hover) .cursor-outline {
 }
 .loader-logo {
     font-family: 'Syne', sans-serif;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 800;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     -webkit-background-clip: text;
