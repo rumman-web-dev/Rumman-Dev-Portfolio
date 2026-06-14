@@ -141,7 +141,7 @@ body:has(button:hover) .cursor-outline {
 }
 .loader-logo span { color: var(--primary-light); }
 .loader-bar {
-   width:min(700px,90vw);
+   width:min(700px,80vw);
     height: 3px;
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
