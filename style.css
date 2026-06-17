@@ -132,6 +132,12 @@ body:has(button:hover) .cursor-outline {
 .loader-inner {
     text-align: center;
 }
+
+.m-logo {
+   display: flex;
+   justify-content: center;
+}
+
 .loader-logo {
     font-family: 'Syne', sans-serif;
     font-size: 50px;
