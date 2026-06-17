@@ -1289,3 +1289,21 @@ body.light-mode body::before { display: none; }
     }
 
 }
+
+/* WhatsApp Float Button */
+.whatsapp-float{
+    position: fixed;
+    right: 25px;
+    bottom: 100px; /* jitna upar chahiye value barha do */
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 32px;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
