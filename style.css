@@ -136,8 +136,6 @@ body:has(button:hover) .cursor-outline {
 .m-logo {
    display: flex;
    justify-content: center;
-   align-item: center;
-   text-align: center;
 }
 
 .loader-logo {
